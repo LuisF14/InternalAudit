@@ -1,0 +1,149 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #f0f0f0;
+}
+
+.equipo {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.equipo h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #666;
+}
+
+.btn-back {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #555;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.miembro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.imagen {
+    background-color: #ddd;
+    height: 150px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+}
+
+.imagen img {
+    /*width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    height: 100%; /* La imagen se ajusta a la altura del contenedor */
+    object-fit: cover; /* Recorta la imagen si es necesario, manteniendo el aspecto de la imagen */
+    border-radius: 8px; /* Aplica el mismo borde redondeado que el contenedor */
+}
+
+
+.puesto {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #888;
+}
+
+.nombre {
+    color: #666;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*PIE DE PAGINA*/
+  /*footer {
+    background: #141618;
+    padding: 5.625rem 0;
+    text-align: center;
+    color: #ffffff;
+  }*/
+
+  footer {
+    background-color: #f0ebe5;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-media img {
+    width: 24px;
+    margin: 0 10px;
+  }
+
+  .address p {
+    margin: 5px 0;
+    font-size: 12px; /* Tamaño de letra más pequeño */
+    color: #555; /* Color de letra más suave para un toque profesional */
+  }

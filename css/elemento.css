@@ -1,0 +1,153 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #f0f0f0;
+}
+
+.elementos {
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.elementos h1 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 2em;
+    color: #666;
+}
+
+.btn-back,
+.btn-nuevo,
+.btn-documentos {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover,
+.btn-nuevo:hover,
+.btn-documentos:hover {
+    background-color: #555;
+}
+
+.botones-superior {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.btn-editar,
+.btn-eliminar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-eliminar {
+    background-color: #dc3545;
+}
+
+.btn-editar:hover {
+    background-color: #0056b3;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+}
+
+/*PIE DE PAGINA*/
+  /*footer {
+    background: #141618;
+    padding: 5.625rem 0;
+    text-align: center;
+    color: #ffffff;
+  }*/
+
+  footer {
+    background-color: #f0ebe5;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-media img {
+    width: 24px;
+    margin: 0 10px;
+  }
+
+  .address p {
+    margin: 5px 0;
+    font-size: 12px; /* Tamaño de letra más pequeño */
+    color: #555; /* Color de letra más suave para un toque profesional */
+  }

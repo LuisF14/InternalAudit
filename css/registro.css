@@ -1,0 +1,142 @@
+/* REGISTRO AUDITOR*/
+
+.body_registro{
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #303133;
+    /*Esta parte pone el fondo para el login y registro*/
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    filter: opacity(100%);/* Ajusta el valor según tus necesidades */
+  }
+
+
+
+  /* Si necesitas superponer un color semitransparente */
+  .body_registro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Ajusta la opacidad según sea necesario */
+    z-index: -1; /* Envía la capa detrás del contenido */
+  }  
+
+.formh1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6E6E6E;
+  }
+  
+  .formreaud {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 650px;
+    height: 480px;
+    background: #BDBDBD;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 8px 13px 20px #848484;
+    padding: 20px 40px;*/
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+  }
+  
+  .formulario-grupo-input {
+    position: relative;
+  }
+  
+  .formulario-validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 27px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+  }
+
+  .formulario-input-error {
+    font-size: 15px;
+    /*margin-bottom: 0;*/
+    display: none;
+    color: #bb2929;
+  }
+
+  .campos {
+    /*width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    font-size: 14px;*/
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .formulario-input-error-activo {
+    display: block;
+  }
+  
+  .formulario-mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+  }
+  
+  .formulario-mensaje-exito-activo {
+    display: block;
+  }
+  
+  .formulario-grupo-correcto .campos {
+    border: 2px solid #119200;
+  }
+  
+  .formulario-grupo-incorrecto .formulario-label {
+    color: #bb2929;
+  }
+  
+  .formulario-grupo-incorrecto .campos {
+    border: 2px solid #bb2929;
+  }
+  
+  #grupo-button {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buttonre {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonr:hover {
+    background-color: #DED6D4
+  }
